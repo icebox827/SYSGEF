@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>SYSGEF - System de Gestion de Formation</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -12,8 +12,10 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-image: url("/img/background_web.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: #ffffff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -41,7 +43,10 @@
             }
 
             .content {
+                position: fixed;
                 text-align: center;
+                padding: 16px;
+                top: 0px;
             }
 
             .title {
@@ -51,15 +56,21 @@
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 18px;
                 font-weight: 600;
                 letter-spacing: .1rem;
-                text-decoration: none;
+                text-decoration: solid;
                 text-transform: uppercase;
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+                margin-bottom: 10px;
+            }
+            .logo {
+                
+            }
+            .footer {
+                align-content: flex-end;
             }
         </style>
     </head>
@@ -71,30 +82,27 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
-
+                    <!--
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
                         @endif
+                    -->
                     @endauth
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                   SYSGEF - ANP<img src="img/anp_logo_transparent.png" alt="anp_logo" class=".logo pl-5 pt-2">  
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                   <h2>Platforme éducative de l'Académie Nationale de Police</h2>
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="footer">Proudly Powered by Azaka Teknoloji - 2020</div>
+        </footer>
     </body>
 </html>
