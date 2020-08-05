@@ -23,8 +23,9 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'SYSGEF - System de Gestion de Formation') }}
+                <a class="navbar-brand d-flex" href="{{ url('/') }}">
+                    <div><img src="/img/anp_logo_transparent.png" alt="logo" class="pr-3" style="border-right: 3px solid;"></div>
+                    <div class="pl-3 pt-4">Académie nationale de police <br/>Plateforme de formation en ligne</div> 
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
